@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Форма</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans|Work+Sans:300,400,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+	<section class="sign">
+		<div class="container">
+			<div class="sign-block">
+				<div class="sign-block-left">
+					<h1 class="sign-block-left__title">Sign up</h1>
+				</div>
+				<!-- /.sign-block-left -->
+				<div class="sign-block-right">
+					<h2 class="sign-block-right__title">New user?</h2>
+					<h3 class="sign-block-right__subtitle">Use the form below to create your account.</h3>
+					<form action="mail.php" method="POST" id="form" class="form">
+            <div class="form__data">
+              <div class="form__item">
+                <div class="form__name">
+                  <label for="formName">first name</label>
+                  <input id="formName" class="input" type="text" name="username" placeholder="Alice">
+                </div>
+                <div class="form__surname">
+                  <label for="formSurname">last name</label>
+                  <input id="formSurname" class="input" type="text" name="usersurname" placeholder="Miller">
+                </div>
+              </div>
+  
+              <div class="form__item">
+                <div class="form__nationality">
+                  <label for="formNationality">nationality</label>
+                  <select id="formNationality" class="form-select form-select__nationality" name="usernationality">
+                    <option value="0" selected="selected">country</option>
+                    <option value="American">American</option>
+                    <option value="France">France</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Spain">Spain</option>
+                  </select>
+                </div>
+                <div class="form__email">
+                  <label for="formEmail">last name</label>
+                  <input id="formEmail" class="input" type="email" name="useremail" placeholder="alice.miller@yahoo.com">
+                </div>
+              </div>
+  
+              <div class="form__item">
+                <div class="form__dates">
+                  <label for="formNationality">Date of Birth</label>
+                  <div class="form__datebirth">
+                    <select id="formDate" class="form-select form-select__date" name="userdate">
+                      <option value="0" selected="selected">Day</option>
+                      <option value="01">01</option>
+                      <option value="02">02</option>
+                      <option value="03">03</option>
+                      <option value="04">04</option>
+                      <option value="05">05</option>
+                      <option value="06">06</option>
+                      <option value="07">07</option>
+                      <option value="08">08</option>
+                      <option value="09">09</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                      <option value="16">16</option>
+                      <option value="17">17</option>
+                      <option value="18">18</option>
+                      <option value="19">19</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                      <option value="24">24</option>
+                      <option value="25"></option>25</option>
+                      <option value="26">26</option>
+                      <option value="27">27</option>
+                      <option value="28">28</option>
+                      <option value="29">29</option>
+                      <option value="30">30</option>
+                    </select>
+                    <select id="forMonth" class="form-select form-select__month" name="usermonth">
+                      <option value="0" selected="selected">Month</option>
+                      <option value="January">January</option>
+                      <option value="February">February</option>
+                      <option value="March">March</option>
+                      <option value="April">April</option>
+                      <option value="May">May</option>
+                      <option value="June">June</option>
+                      <option value="July">July</option>
+                      <option value="August">August</option>
+                      <option value="September">September</option>
+                      <option value="October">October</option>
+                      <option value="November">November</option>
+                      <option value="December">December</option>
+                    </select>
+                    <select id="formYear" class="form-select form-select__year" name="useryear">
+                      <option value="0" selected="selected">year</option>
+                      <option value="1995">1992</option>
+                      <option value="1995">1993</option>
+                      <option value="1995">1994</option>
+                      <option value="1995">1995</option>
+                      <option value="1996">1996</option>
+                      <option value="1997">1997</option>
+                      <option value="1998">1998</option>
+                      <option value="1999">1999</option>
+                      <option value="2000">2000</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-gender">
+                  <p class="form-gender__label">Gender</p>
+                  <div class="form-gender__radio">
+                    <div>
+                      <input id="formMale" class="input" type="radio" value="Male" name="userradio">
+                      <label for="formMale">Male</label>
+                    </div>
+                    <div>
+                      <input id="formFemale" class="input" type="radio" value="Female" name="userradio">
+                      <label for="formFemale">Female</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="form__item">
+                <div class="form__password">
+                  <label for="formPassword">password</label>
+                  <input id="formPassword" class="input" type="password" name="userpassword">
+                </div>
+                <div class="form__confirmpassword">
+                  <label for="formConfirmpassword">confirm password</label>
+                  <input id="formConfirmpassword" class="input" type="password" name="confirmpassword">
+                </div>
+              </div>
+            </div>
+            <div class="form__button">
+              <p class="form__login">Have an account? <a href="">Login</a></p>
+              <button id="formButton" class="button form__submit">Complete Signup</button>
+            </div>
+
+					</form>
+				</div>
+				<!-- /.sign-block-right -->
+			</div>
+			<!-- /.sign-block -->
+		</div>
+		<!-- /.container -->
+	</section>
+  <!-- /.sign -->
+  
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!-- Подключение валидатора для формы -->
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

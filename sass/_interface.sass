@@ -1,0 +1,122 @@
+*
+  box-sizing: border-box
+body
+  font-family: 'Work Sans', sans-serif
+  font-style: normal
+  color: $text
+img
+  max-width: 100%
+
+.container
+  width: 1170px
+  margin: 0 auto
+
+.button
+  width: 154px
+  height: 32px
+  background: $blue
+  color: $white
+  font-size: 14px
+  line-height: 18px
+  border: none
+  &:focus
+    outline: none
+input[type=radio]
+  display: none
+
+input[type=radio]:checked + label:after 
+  content: ''
+  position: absolute
+  top: 6px
+  left: 4px
+  display: block
+  width: 6px
+  height: 6px
+  background: $blue
+  border-radius: 50%
+label
+  margin-bottom: 4px
+  font-family: Work Sans
+  font-weight: 300
+  font-size: 12px
+  line-height: 14px
+  color: $label
+  text-transform: capitalize
+select
+  margin-bottom: 4px
+  font-family: Work Sans
+  font-weight: 300
+  font-size: 14px
+  line-height: 16px
+  color: $text
+  text-transform: capitalize
+input[type="text"], input[type="email"], input[type="password"] 
+  color: $text
+  &::placeholder
+    color: $text
+input::-webkit-input-placeholder       
+  opacity: 1
+  transition: opacity 0.3s ease
+input::-moz-placeholder                
+  opacity: 1
+  transition: opacity 0.3s ease
+input:-moz-placeholder                 
+  opacity: 1
+  transition: opacity 0.3s ease
+input:-ms-input-placeholder            
+  opacity: 1
+  transition: opacity 0.3s ease
+input:focus::-webkit-input-placeholder 
+  opacity: 0
+  transition: opacity 0.3s ease
+input:focus::-moz-placeholder          
+  opacity: 0
+  transition: opacity 0.3s ease
+input:focus:-moz-placeholder           
+  opacity: 0
+  transition: opacity 0.3s ease
+input:focus:-ms-input-placeholder      
+  opacity: 0
+  transition: opacity 0.3s ease
+
+.input
+  font-size: 14px
+  line-height: 16px
+  color: $text
+  border: none
+  outline: none
+
+a, input, button
+  outline: none
+
+@media (max-width: 1200px)
+  .container
+    max-width: 950px
+    width: 96%
+
+@media (min-width: 992px)
+  .button
+    &:hover
+      cursor: pointer
+      background: darken($blue, 4%)
+      transition-duration: 500ms
+
+@media (max-width: 992px)
+  .container
+    max-width: 726px
+    width: 96%
+
+@media (max-width: 768px)
+  .container
+    max-width: 528px
+    width: 96%
+
+@media (max-width: 567px)
+  .container
+    max-width: 390px
+    width: 96%
+
+@media (max-width: 420px)
+  .container
+    max-width: 290px
+    width: 96%

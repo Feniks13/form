@@ -1,0 +1,71 @@
+.sign
+  padding-top: 60px
+  padding-bottom: 60px
+  background: $gray
+  &-block
+    display: flex
+    width: 100%
+    max-width: 665px
+    margin: 0 auto
+    &-left
+      position: relative
+      width: 100%
+      max-width: 137px
+      background: $blue
+      &__title
+        position: absolute
+        bottom: 75px
+        right: -49px
+        width: 170px
+        margin: 0
+        color: $white
+        font-family: PT Sans
+        font-weight: normal
+        font-size: 49px
+        line-height: 63px
+        letter-spacing: 0.5px
+        transform: rotate(-90deg)
+    &-right
+      width: 100%
+      max-width: 528px
+      padding: 40px 22px 28px 22px
+      background: $white url(../images/form_bg.png) bottom right no-repeat
+      &__title
+        margin: 0
+        font-weight: 500
+        font-size: 22px
+        line-height: 26px
+        letter-spacing: -0.46px
+      &__subtitle
+        margin: 0
+        margin-bottom: 19px
+        font-weight: 300
+        font-size: 14px
+        line-height: 16px
+        
+@media (max-width: 768px)
+  .sign
+    &-block
+      &-right
+        &__title, &__subtitle
+          text-align: center
+
+@media (max-width: 567px)
+  .sign
+    &-block
+      &-left
+        max-width: 66px
+
+@media (max-width: 420px)
+  .sign
+    &-block
+      &-left
+        max-width: 32px
+        &__title
+          bottom: 82px
+          right: -66px
+          font-size: 23px
+          line-height: 28px
+      &-right
+        width: 240px
+        padding: 10px 15px
